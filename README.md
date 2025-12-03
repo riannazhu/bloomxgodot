@@ -12,7 +12,7 @@ Watch the demo video: https://www.youtube.com/watch?v=cZlw0LFRhlw
 ✅ **Working**: 
 - The Godot game engine is successfully connected and displayed within the React Native app interface
 - Basic rendering is functional
-- The bridge between React Native and Godot is established
+- React Native UI can overlay on top (like the "Bloom x Godot" badge at the bottom)
 
 ## ⚠️ Current Limitations / Known Bugs
 
