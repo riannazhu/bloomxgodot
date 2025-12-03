@@ -1,20 +1,52 @@
-# Welcome to your Expo app 👋
+# Pocket Godot - React Native + Godot Integration
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This project demonstrates an integration between React Native (using Expo) and the Godot game engine, allowing you to embed Godot games within a React Native mobile application.
 
-## Get started
+## 🎥 Demo Video
 
-1. Install dependencies
+[![Pocket Godot Demo](https://img.youtube.com/vi/cZlw0LFRhlw/0.jpg)](https://www.youtube.com/watch?v=cZlw0LFRhlw)
 
-   ```bash
-   npm install
-   ```
+Watch the demo video: https://www.youtube.com/watch?v=cZlw0LFRhlw
+## 📱 Current Status
 
-2. Start the app
+✅ **Working**: 
+- The Godot game engine is successfully connected and displayed within the React Native app interface
+- Basic rendering is functional
+- The bridge between React Native and Godot is established
 
-   ```bash
-   npx expo start
-   ```
+## ⚠️ Current Limitations / Known Bugs
+
+**Scene transitions do not work yet.** Currently, Godot is displayed correctly, but input may not be fully detected (touch/mouse events may not change the scene).
+
+This is a small fix planned for later; the priority was getting Godot connected and displayed in the app.
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+1. **Generate your `game.pck` file from Godot:**
+   - Open your Godot project
+   - Go to **Project → Project Settings → Export**
+   - Set up an export preset (select a platform like Windows Desktop)
+   - Click **Export Project → Export All**
+   - Rename the exported `.pck` file to `game.pck`
+   - Alternatively, you can export just the PCK file using: `Project → Export → Export PCK/ZIP...`
+
+2. **Place the exported file:**
+   - Copy `game.pck` to the `assets/` directory (create this folder if it doesn't exist)
+   - The final path should be: `assets/game.pck`
+
+### Installation
+
+```bash
+npm install
+```
+
+Start the app
+
+```bash
+npx expo start
+```
 
 In the output, you'll find options to open the app in a
 
@@ -34,17 +66,3 @@ npm run reset-project
 ```
 
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
